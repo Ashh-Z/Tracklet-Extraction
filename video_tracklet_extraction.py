@@ -11,17 +11,13 @@ import re
 names = {0: 'Bicycle', 1: 'Bus', 2: 'Cars', 3: 'LCV', 4: 'Three-Wheeler', 5: 'Two-Wheeler', 6: 'Truck'}
 
 def process_video(video_path, output_folder):
-    # Load your fine-tuned YOLO model
     yolo_path = os.path.join(os.path.dirname(os.path.realpath(__file__)),'yolo5s_finetuned.pt')
     model = YOLO(yolo_path)
 
-    # Initialize SORT tracker
     mot_tracker = Sort(max_age=3, min_hits=3, iou_threshold=0.3)
 
-    # Open the video file
     cap = cv2.VideoCapture(video_path)
 
-    # Get video properties
     total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
 
     # Define the output paths
