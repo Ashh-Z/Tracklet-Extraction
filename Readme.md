@@ -1,4 +1,4 @@
-Process video files to detect and track different vehicles in the video, obtain tracklet information for each vehicle
+Process video files to detect and track different vehicles in the video, obtain tracklet information for each vehicle. The method utilizes Yolov5s for detection and SORT for tracking.
 
 Input to the file should be a json file which contais the path to you videos, in the following format : 
 ```
