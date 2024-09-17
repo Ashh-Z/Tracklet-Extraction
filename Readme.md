@@ -8,5 +8,5 @@ Input to the file should be a json file which contais the path to you videos, in
 }
 ```
 
-The provided Yolov5s model has been finetuned on the Indian Driving Dataset (IDD) and some other smaller kaggle datasets for the following classes : 
+The provided Yolov5s model has been finetuned on the Indian Driving Dataset (IDD) and some other smaller kaggle datasets for the following classes : \\
 ```{0: 'Bicycle', 1: 'Bus', 2: 'Cars', 3: 'LCV', 4: 'Three-Wheeler', 5: 'Two-Wheeler', 6: 'Truck'}```
